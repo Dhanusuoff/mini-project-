@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClinicDesk - Login</title>
+<style>
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.login-box {
+    width: 320px;
+    padding: 40px 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: white;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.login-box h2 {
+    margin-bottom: 25px;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    font-size: 14px;
+    padding-left: 15px;
+    transition: 0.3s;
+}
+
+
+.login-box input:focus {
+    box-shadow: 0 0 8px #ffffff;
+}
+
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 25px;
+    background: white;
+    color: #764ba2;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.login-box button:hover {
+    background: #ffd369;
+    color: #333;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+div a {
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+div a:hover {
+    text-decoration: underline;
+    color: #ffd369;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+    </style>
+</head>
+<body>
+   
+<div class="login-box">
+
+    <h2>ClinicDesk Login</h2>
+    <input type="text" placeholder="User firstname">
+    <input type="text" placeholder="User losttname">
+    <input id="text" placeholder="gmail">
+    <input type="password" placeholder="Password">
+   
+    <button>Login</button>
+</div>
+
+<div>
+    <a href = "index.html">Home Page</a>
+</div>
+
+</body>
+</html>
+
+
+
+
+
